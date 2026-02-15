@@ -4,22 +4,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>S.Y. 25-26 2ND SEM. SUBJECTS</title>
+    <title>MY PORTFOLIO</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
             background-color: #f4f6f8;
             padding: 20px;
+            letter-spacing: 1.5px;
+
+        }
+
+        header {
+            background-color: #03172c;
+            color: white;
+            padding: 25px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 0 0 15px 15px;
+            margin-bottom: 30px;
+        }
+
+        #header-title {
+            font-size: 2.2rem;
+            margin: 0;
+            font-weight: 700;
+        }
+
+        #year-section {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin: 5px 0 0 0;
+            color: #2980b9;
+        }
+
+        header img {
+            width: 150px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        main section {
+            background: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5)
+        }
+
+        section h2 {
+            color: #03172c;
+            border-left: 6px solid #2980b9;
+            padding-left: 15px;
+            line-height: 1;
+            margin-bottom: 15px;
         }
 
         table {
             width: 100%;
-            border-collapse: collapse;
+            border-collapse: separate;
+            border-spacing: 0;
             background-color: white;
-            border: 2px solid #02021f;
-            letter-spacing: 1px;
+            border: 1.5px solid #02021f;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 40px 0;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         }
-        
+
         .table-title {
             background-color: #03172c;
             color: white;
@@ -27,20 +79,36 @@
             text-align: center;
             padding: 15px;
             letter-spacing: 3px;
-            
+            border: none;
+
         }
 
-        td, th {
-            border: 2px solid #0b0b6c;
+        td,
+        th {
+            border-right: 1px solid #0b0b6c;
+            border-bottom: 1px solid #0b0b6c;
+        }
+        
+        td:last-child, th:last-child {
+            border-right: none;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
         }
 
         td {
-            padding: 10px;
-            text-align: left;
+            padding: 12px 15px;
+            vertical-align: top;
         }
 
-        td div{
+        td div {
             margin-bottom: 6px;
+        }
+
+        td b {
+            color: #03172c;
+            font-size: 0.85rem;
         }
 
         th {
@@ -52,81 +120,162 @@
             text-align: center;
             width: 10%;
         }
-        
+
         .col-subject {
             text-align: center;
         }
-        .col-subject, .col-time, .col-room {
+
+        .col-subject,
+        .col-time,
+        .col-room {
             width: 30%;
         }
 
-        a {
-            color: #2980b9;
-            text-decoration: none;
+
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 25px 0;
+            background-color: #f2f6f8;
         }
 
-        a:hover {
-            text-decoration: underline;
+        footer button {
+            background-color: #03172c;
+            border: none;
+            border-radius: 30px;
+            padding: 0;
+            cursor: pointer;
+            transition: all 0.3 ease;
+            box-shadow: 0 4px 150px rgba(0, 0, 0, 0.2);
+        }
+
+        td a {
+            color: #2980b9;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 4px 10px;
+            border-radius: 4px;
+            transition: all 0.3 ease;
+            display: inline-block;
+        }
+
+        td a:hover {
+            background-color: #03172c;
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.);
+            transform: translateY(-2px);
+        }
+
+        footer button a {
+            color: white;
+            display: inline-block;
+            text-decoration: none;
+            padding: 15px 40px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        footer button:hover {
+            background-color: #2980b9;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(41, 128, 185, 0.4);
         }
     </style>
 </head>
 
 <body>
+    <header>
+        <img src="images/hero-image-portfolio.webp" alt="hero-image-portfolio">
+        <h1 id="header-title">GOMEZ, LEHI</h1>
+        <p id="year-section">BSIT1-03</p>
+    </header>
     <main>
-        <table>
-            <thead>
-                <tr>
-                    <th colspan="4" class="table-title">S.Y. 25-26 2ND SEM. SUBJECTS</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th>CODE</th>
-                    <th>SUBJECT</th>
-                    <th>TIME</th>
-                    <th>ROOM</th>
-                </tr>
-                <tr>
-                    <td class="col-code">ITE 399</td>
-                    <td class="col-subject">HUMAN COMPUTER INTERACTION</td>
-                    <td class="col-time">
-                        <div><b>MON & WED:</b> 2:00-3:00PM</div>
-                        <div><b>TUE & THU:</b>  1:30 - 3:00PM</div>
-                    </td>
-                    <td class="col-room">
-                        <div><b>MON:</b> PTC 403</div>
-                        <div><b>TUE:</b> ITS 201</div>
-                        <div><b>WED & THU:</b> GOOGLE MEET VIA <a href="https://meet.google.com/emk-yhbn-guf">LINK</a></div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-code">ITE 048</td>
-                    <td class="col-subject">DISCRETE STRUCTURES</td>
-                    <td class="col-time">
-                        <div><b>TUE & THU:</b>  10:30 - 12:00PM</div>
-                    </td>
-                    <td class="col-room">
-                        <div><b>MON:</b>  PTC 403</div>
-                        <div><b>TUE:</b>  ITS 201</div>
-                        <div><b>WED & THU:</b>  GOOGLE MEET VIA <a href="https://meet.google.com/hnx-eqku-ccz">LINK</a></div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-code">ITE 186</td>
-                    <td class="col-subject">COMPUTER PROGRAMMING II</td>
-                    <td class="col-time">
-                        <div><b>MON & WED:</b>  4:30-6:00PM</div>
-                        <div><b>TUE & THU:</b>  5:00 - 5:30PM</div>
-                    </td>
-                    <td class="col-room">
-                        <div><b>MON:</b> ITS 201</div>
-                        <div><b>TUE:</b> PTC 403</div>
-                        <div><b>WED & THU:</b> GOOGLE MEET VIA <a href="https://meet.google.com/peh-ovzq-pgi">LINK</a></div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <section>
+            <h2>ABOUT ME:</h2>
+            <p>I'm Lehi Gomez, an aspiring full-stack web developer with a passion for learning and personal growth. I
+                strive to approach every task with consistency, discipline, and a commitment to excellence.</p>
+        </section>
+        <section>
+            <h2>MY MAJOR SUBJECTS SY.2-26</h2>
+            <ol type="i">
+                <li>ITE 399: HUMAN COMPUTER INTERFACE</li>
+                <li>ITE 186: COMPUTER PROGRAMMING II</li>
+                <li>ITE 048: DISCRETE STRUCTURES</li>
+            </ol>
+        </section>
+
+        <section>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="4" class="table-title">S.Y. 25-26 2ND SEM. SUBJECTS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>CODE</th>
+                        <th>SUBJECT</th>
+                        <th>TIME</th>
+                        <th>ROOM</th>
+                    </tr>
+                    <tr>
+                        <td class="col-code">ITE 399</td>
+                        <td class="col-subject">HUMAN COMPUTER INTERACTION</td>
+                        <td class="col-time">
+                            <div><b>MON & WED:</b> 2:00-3:00PM</div>
+                            <div><b>TUE & THU:</b> 1:30 - 3:00PM</div>
+                        </td>
+                        <td class="col-room">
+                            <div><b>MON:</b> PTC 403</div>
+                            <div><b>TUE:</b> ITS 201</div>
+                            <div><b>WED & THU:</b> GOOGLE MEET VIA <a
+                                    href="https://meet.google.com/emk-yhbn-guf" target="_blank">LINK</a></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-code">ITE 048</td>
+                        <td class="col-subject">DISCRETE STRUCTURES</td>
+                        <td class="col-time">
+                            <div><b>TUE & THU:</b> 10:30 - 12:00PM</div>
+                        </td>
+                        <td class="col-room">
+                            <div><b>MON:</b> PTC 403</div>
+                            <div><b>TUE:</b> ITS 201</div>
+                            <div><b>WED & THU:</b> GOOGLE MEET VIA <a
+                                    href="https://meet.google.com/hnx-eqku-ccz" target="_blank">LINK</a></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-code">ITE 186</td>
+                        <td class="col-subject">COMPUTER PROGRAMMING II</td>
+                        <td class="col-time">
+                            <div><b>MON & WED:</b> 4:30-6:00PM</div>
+                            <div><b>TUE & THU:</b> 5:00 - 5:30PM</div>
+                        </td>
+                        <td class="col-room">
+                            <div><b>MON:</b> ITS 201</div>
+                            <div><b>TUE:</b> PTC 403</div>
+                            <div><b>WED & THU:</b> GOOGLE MEET VIA <a
+                                    href="https://meet.google.com/peh-ovzq-pgi" target="_blank">LINK</a></div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>MY HOBBIES:</h2>
+            <ul>
+                <li>Coding</li>
+                <li>Playing/Listening to Classical (piano) Music</li>
+                <li>Reading Self-Help Books</li>
+            </ul>
+        </section>
     </main>
+    <footer>
+        <button><a href="https://www.facebook.com/lehi.gomez.122023/" target="_blank">SEE MORE</a></button>
+    </footer>
 </body>
 
 </html>
